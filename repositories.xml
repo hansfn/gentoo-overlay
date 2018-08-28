@@ -1,0 +1,11 @@
+<repositories encoding="unicode" version="1.1">
+  <repo priority="50" quality="experimental">
+    <name>hansfn</name>
+    <description>Gentoo packages for various programs not in Gentoo</description>
+    <owner>
+      <email>hansfn@gmail.com</email>
+      <name>Hans Fredrik Nordhaug</name>
+    </owner>
+    <source type="git">https://github.com/hansfn/gentoo-overlay.git</source>
+  </repo>
+</repositories>
