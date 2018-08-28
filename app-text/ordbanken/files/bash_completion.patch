@@ -1,0 +1,16 @@
+diff --git a/skript/bash_completion_ordbanken b/skript/bash_completion_ordbanken
+index 75a1b43..c767698 100644
+--- a/skript/bash_completion_ordbanken
++++ b/skript/bash_completion_ordbanken
+@@ -45,11 +45,6 @@ _ordbanken_finn_sprak()
+     fi
+   fi
+ 
+-  # Namnet på bokmålsordlista er ulik språkkoden.
+-  if [ "$sprak" = "nb" ]
+-  then
+-    sprak="bm"
+-  fi
+   echo $sprak
+ }
+ 
