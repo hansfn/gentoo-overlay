@@ -23,12 +23,8 @@ src_prepare() {
 	eapply "${FILESDIR}/bash_completion.patch"
 
 	eapply_user
-
-	# Avoid that "make install" installs docs in (wrong) location
-	sed -i -e '/DOC_FILES=/d' Makefile
 }
 
 src_install() {
-	emake DESTDIR="${D}" PREFIX="/usr" install
-	dodoc COPYING gpl-3.0.txt LESMEG norsk_ordbank.pdf NYTT README
+	emake DESTDIR="${D}" PREFIX="/usr" DOC_PREFIX="${D}/usr/share/doc/${P}"  install
 }
