@@ -20,8 +20,6 @@ RDEPEND="sys-apps/grep
 DEPEND="${RDEPEND}"
 
 src_prepare() {
-	eapply "${FILESDIR}/bash_completion.patch"
-
 	eapply_user
 }
 
