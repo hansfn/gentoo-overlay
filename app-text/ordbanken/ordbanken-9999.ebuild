@@ -1,4 +1,4 @@
-EAPI="6"
+EAPI="7"
 
 inherit subversion
 ESVN_REPO_URI="svn://svn.savannah.nongnu.org/ordbanken/trunk"
@@ -7,7 +7,7 @@ DESCRIPTION="An easy-to-use program for looking up and filtering entries in the 
 HOMEPAGE="https://savannah.nongnu.org/projects/ordbanken/"
 LICENSE="GPL-3+"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~amd64 ~x86"
 
 RDEPEND="sys-apps/grep
 	sys-apps/sed
